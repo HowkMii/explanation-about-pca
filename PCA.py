@@ -102,3 +102,18 @@ plt.plot([0, rotationMatrix[0][0] * std1 * 3], [0, rotationMatrix[0][1] * std1 *
 plt.plot([0, rotationMatrix[1][0] * std2 * 3], [0, rotationMatrix[1][1] * std2 * 3], 'k-', color='green')
 
 plt.show()
+
+
+
+nPoints = len(data)
+
+# Plot the original data in blue
+plt.scatter(data[:,0], data[:,1])
+
+#Plot the projection along the first component in orange
+plt.scatter(data[:,0], np.zeros(nPoints))
+
+#Plot the projection along the second component in green
+plt.scatter(np.zeros(nPoints), data[:,1])
+
+plt.show()
