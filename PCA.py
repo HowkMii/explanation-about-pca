@@ -22,3 +22,12 @@ dataPCA = pd.DataFrame(data = rotatedData, columns = ['PC1', 'PC2'])
 # Plot the transformed data in orange
 plt.scatter(dataPCA.PC1, dataPCA.PC2)
 plt.show()
+
+
+
+print('Eigenvectors or principal component: First row must be in the direction of [1, n]')
+print(pcaTr.components_)
+
+print()
+print('Eigenvalues or explained variance')
+print(pcaTr.explained_variance_)
