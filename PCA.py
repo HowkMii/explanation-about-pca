@@ -113,7 +113,6 @@ plt.scatter(data[:,0], data[:,1])
 #Plot the projection along the first component in orange
 plt.scatter(data[:,0], np.zeros(nPoints))
 
-#Plot the projection along the second component in green
 plt.scatter(np.zeros(nPoints), data[:,1])
 
 plt.show()
